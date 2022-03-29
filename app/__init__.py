@@ -6,16 +6,19 @@ from flask_mail import Mail
 from flask_bootstrap import Bootstrap
 from flask_moment import Moment
 from config import Config
+from flask_sqlalchemy import SQLAlchemy
 
 mail = Mail()
 bootstrap = Bootstrap()
 moment = Moment()
+db = SQLAlchemy()
 
 
 def create_app(config_class=Config):
     app = Flask(__name__)
     app.config.from_object(config_class)
 
+    db.init_app(app)
     mail.init_app(app)
     bootstrap.init_app(app)
     moment.init_app(app)

@@ -1,17 +1,8 @@
-from flask import Flask
-from flask_sqlalchemy import SQLAlchemy
-
-app = Flask(__name__)
-app.debug = True
-app.config['SECRET_KEY'] = 'a really really really really long secret key'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///stud_ws.db'
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-db = SQLAlchemy(app)
+from app import create_app, db
+from app.models import Users, Timetable, Homework, News, Tutors, Dates, Days, Subjects, Checks
 
 
-@app.route('/')
-def index():
-    return 1
+app = create_app()
 
 
 if __name__ == "__main__":
