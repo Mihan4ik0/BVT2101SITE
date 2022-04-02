@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base.html" %}
 
-</body>
-</html>
+{% block content %}
+	<h1>Чё-то не работает, сорян</h1>
+	<p>Мы делаем всё возможное для устранения проблемы. Аминь</p>
+	<p><a href="{{ url_for('index.html')}}">Back</a></p>
+{% endblock %}

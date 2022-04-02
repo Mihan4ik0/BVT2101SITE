@@ -1,12 +1,16 @@
-from main import db
+from flask_login import UserMixin
+from app import db, login
 
 
 # Таблица для данных студентов
-class Users(db.Model):
+class Users(UserMixin, db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(70), nullable=False)
     password = db.Column(db.String(100), nullable=False)
     role = db.Column(db.String(20), nullable=False)
+
+
+
 
 
 # Таблица расписания занятий
@@ -27,7 +31,7 @@ class Timetable(db.Model):
 class Homework(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     task = db.Column(db.Text(1000))
-    file = db.Column(db.Varbinary(max), nullable=False)
+    file = db.Column(db.LargeBinary(max), nullable=False)
     tutor_ho = db.relationship('Tutors')
     date_ho = db.relationship('Dates')
     day_ho = db.relationship('Days')
@@ -83,3 +87,7 @@ class Checks(db.Model):
     id_ho_check = db.Column(db.Integer, db.ForeignKey('homework.id'))
     check = db.Column(db.Boolean, nullable=False)   # 0 - модерация, 1 - проверено
 
+
+@login.user_loader
+def load_user(id):
+     return Users.query.get(int(id))
