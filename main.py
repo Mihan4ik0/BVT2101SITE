@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
@@ -11,9 +11,9 @@ db = SQLAlchemy(app)
 
 @app.route('/')
 def index():
-    return 1
+    return render_template("login.html")
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
 
