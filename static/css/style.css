@@ -55,8 +55,11 @@ body {
     height: 470px;
     background-color: #fff;
     -webkit-border-radius: 20px;
-    position: sticky;
-    margin: 95px 50px 15px 320px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
 }
 
 .box-logo {
@@ -122,8 +125,11 @@ input::placeholder {
     height: 350px;
     background-color: #fff;
     -webkit-border-radius: 20px;
-    position: sticky;
-    margin: 120px 50px 15px 370px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
 }
 
 .reset-title {
