@@ -10,8 +10,13 @@ db = SQLAlchemy(app)
 
 
 @app.route('/')
-def index():
+def login():
     return render_template("login.html")
+
+
+@app.route('/reset')
+def reset():
+    return render_template("forgot_password.html")
 
 
 if __name__ == "__main__":

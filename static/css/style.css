@@ -27,7 +27,6 @@ body {
 }
 
 .wrapper {
-    margin: 0 auto;
     min-height: 100%;
     height: auto !important;
     height: 100%;
@@ -39,7 +38,7 @@ body {
 
 .middle {
     width: 100%;
-    position: relative;
+    position: fixed;
 }
 
 .middle:after {
@@ -48,12 +47,16 @@ body {
     content: '';
 }
 
+/* For login.html
+-----------------------------------------------------------------------------*/
+
 .box-entering {
     width: 500px;
     height: 470px;
     background-color: #fff;
     -webkit-border-radius: 20px;
-    margin: 95px 0px 15px 325px;
+    position: sticky;
+    margin: 95px 50px 15px 320px;
 }
 
 .box-logo {
@@ -81,7 +84,8 @@ body {
 }
 
 input::placeholder {
-    color: #999; font-size: 13px;
+    color: #999;
+    font-size: 13px;
 }
 
 .box-send {
@@ -108,6 +112,63 @@ input::placeholder {
     color: #009cf0;
     font-weight: 500;
     margin: 10px 65px 20px 0px;
+}
+
+/* For forgot_password.html
+-----------------------------------------------------------------------------*/
+
+.reset-box {
+    width: 400px;
+    height: 350px;
+    background-color: #fff;
+    -webkit-border-radius: 20px;
+    position: sticky;
+    margin: 120px 50px 15px 370px;
+}
+
+.reset-title {
+    font-size: 28px;
+    line-height: 8px;
+    padding: 65px 0px 30px 93px;
+    color: #3b3b3b;
+}
+
+.reset-input {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    padding: 7px;
+    margin: 20px 0px 7px 50px;
+    width: 270px;
+    background-color: #eee;
+    border: 2px solid #eee;
+}
+
+/* Для placeholder в reset-input*/
+
+.reset-info {
+    margin: 40px 0px 7px 80px;
+    font-style: italic;
+    font-size: 15px;
+    color: #666;
+}
+
+.reset-send {
+    float: center;
+	padding: 6px;
+    width: 140px;
+    height: 40px;
+    font-size: 17px;
+    color: #fff;
+    margin: 50px 0px 20px 125px;
+    background-color: #5845a7;
+    border: 2px solid #5845a7;
+    -webkit-border-radius: 13px;
+}
+
+.reset-send:hover {
+    background-color: #372579;
+    border: 2px solid #372579;
 }
 
 .content {
