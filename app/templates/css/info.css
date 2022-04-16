@@ -1,0 +1,173 @@
+/*Header ------------------------------------------------------------*/
+
+body {
+	background:#6a44d0;
+	font-family:"Bahnschrift";
+	
+}
+
+/* применяем inline-block позиционирование к элементам навигации */
+nav ul li {
+		margin: 0px 100px 0 0;
+		display:inline-block;
+				}
+			
+/* стилизуем ссылки */
+nav a {
+		font-size:25px;
+		line-height: 60px;
+		text-color:#C0C0C0;
+				}		
+}
+
+ul {
+    /* Убираю маркеры у списка*/
+    list-style: none;
+    /* Делаю элементы блочными. */
+    display: block;
+    /* Убираю отступы. */
+    margin:0px;
+    /* Убираю еще отступы! */
+    padding:0px;
+}
+
+ul.topmenu > li {
+    /* Задаю выравнивание и позиционирование. */
+    float: left;
+    /* Считаем координаты относительно исходного места*/
+    position: relative;
+	
+}
+ul.topmenu > li > a {
+    /* Делаю элементы блочными: */
+    display: block;
+    /* Задаю белый цвет. */
+    color: black;
+    /* Задаю отступ 10px. */
+    padding: 20px;
+    /* Убираю форматирование*/
+    text-decoration: none;
+	
+ 
+}
+ul.topmenu > li > img:hover {
+    /* Задаю цвет при наведении. */
+    background-color: white;
+}
+ul.submenu {
+    position: absolute;
+    width: 300px;
+    top: 37px;
+    left:-70px;
+    /* Делаю субменю скрытыми. */
+    display: none;
+    
+}
+ul.submenu > li {
+    /* Блочное расположение элементов*/
+    display: block;
+}
+ul.submenu > li > a {
+    /* Делаю элементы блочными. */
+    display: block;
+    /* Убираю форматирование*/
+    text-decoration: none;
+    /* Задаю отступ. */
+    padding: 10px;
+    /* Задаю цвет. */
+    color:  #6a44d0;
+    /* Еще цвет. */
+    background-color: silver;
+	font-size:20px;
+}
+ul.submenu > li > img:hover {
+    /* Цвет бэкграунда при наведении. */
+    background-color: #eb9316;
+    /* Задаю подчеркивание*/
+    text-decoration: underline;
+	img:"submenu_open.png";
+	
+}
+ul.submenu > li > a:hover {
+    /* Цвет бэкграунда при наведении. */
+    background-color:  #c8c8c8;
+    /* Задаю подчеркивание*/
+    text-decoration: none;
+	
+}
+ul.topmenu > li:hover > ul.submenu {
+    /* Делаю элементы блочными. */
+    display: block;
+}
+ul.topmenu > li > a:hover {
+    /* цвет текста при наведнии */
+    color:  silver;
+	
+}
+
+div.hearder > nav > ul > li{
+	background:white;
+
+}
+div.hearder > nav > ul {
+	background:white;
+	padding-bottom:105px;
+	border-radius:10px;
+}
+
+/*Container-----------------------------------------*/
+
+div.container {
+	margin:50px 60px;
+
+}
+h1 {
+	font-size:50px;
+	color:silver;
+}
+div.container > ul > li {
+	display:inline-block;
+	padding:15px;
+}
+div.container > ul  {
+	display:block;
+	background:white;
+	border-radius:15px;
+}
+div.container >ul > p {
+	font-size:20px;
+	padding:20px;
+}
+/* Размер и цвет Даты , чел , проверки */
+li.Data {
+	font-size:25px;
+	font-stretch:10px;
+}
+li.Name {
+	font-size:20px;
+	color:silver;
+}
+
+
+/*Footer-------------------------------*/
+
+div.footer{
+	/*прикрепляю подвал*/
+	position:sticky;
+	bottom:0;
+}
+div.footer > footer {
+	background: #7a7d7e;
+	display:block;
+	border-radius:10px;
+	
+}
+div.footer > footer > ul > li {
+	display:block;
+	font-size: 15px;
+	
+}
+div.footer > footer > ul {
+	display:inline-table;
+	position:bottom;
+}
