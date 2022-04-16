@@ -177,6 +177,28 @@ input::placeholder {
     border: 2px solid #372579;
 }
 
+
+/* For update_password.html
+-----------------------------------------------------------------------------*/
+
+.update-send {
+    float: center;
+	padding: 6px;
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    color: #fff;
+    margin: 20px 0px 20px 145px;
+    background-color: #5845a7;
+    border: 2px solid #5845a7;
+    -webkit-border-radius: 13px;
+}
+
+.update-send:hover {
+    background-color: #372579;
+    border: 2px solid #372579;
+}
+
 .content {
     padding: 0 270px 0 0;
 }

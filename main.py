@@ -19,6 +19,11 @@ def reset():
     return render_template("forgot_password.html")
 
 
+@app.route('/update')
+def update():
+    return render_template("update_password.html")
+
+
 if __name__ == "__main__":
     app.run(debug=True)
 
