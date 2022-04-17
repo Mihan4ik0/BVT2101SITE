@@ -4,4 +4,4 @@ from app.main import bp
 
 @bp.route('/', methods=['GET', 'POST'])
 def index():  # логика главной страницы
-    return render_template('index.html')
+    return render_template('news.html')
