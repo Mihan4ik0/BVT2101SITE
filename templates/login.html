@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <title>Entering</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link href="static/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <main class="content">
+            <div class = "box-entering">
+                <img src="/static/img/mtuci-logo.png" class="box-logo">
+                <h1 class="box-title">Sign in to BVT2101</h1>
+                <form method = "POST" action="/login">
+                    <input class="box-input" value="" maxlength="80" name="login" placeholder="Email"/>
+                    <input class="box-input" type = "password" value="" maxlength="70" name="password" placeholder="Password"/>
+
+                    <div class="box-restore-pass">
+                        <a href="{{ url_for('reset')}}">Forgot password?</a>
+                    </div>
+                    <button type = "submit" class="box-send">Sign in</button>
+                </form>
+            </div>
+        </main>
+        <!-- .content -->
+
+    </div>
+    <!-- .container-->
+
+   <!-- <script type="text/javascript" src="./static/js/script.js"></script> -->
+
+</body>
+
+</html>
+

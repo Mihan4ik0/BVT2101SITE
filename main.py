@@ -1,4 +1,29 @@
-from app import create_app
+from flask import Flask, render_template
+from flask_sqlalchemy import SQLAlchemy
 
-app = create_app()
-app.run()
+app = Flask(__name__)
+app.debug = True
+app.config['SECRET_KEY'] = 'a really really really really long secret key'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///stud_ws.db'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+db = SQLAlchemy(app)
+
+
+@app.route('/')
+def login():
+    return render_template("login.html")
+
+
+@app.route('/reset')
+def reset():
+    return render_template("forgot_password.html")
+
+
+@app.route('/update')
+def update():
+    return render_template("update_password.html")
+
+
+if __name__ == "__main__":
+    app.run(debug=True)
+

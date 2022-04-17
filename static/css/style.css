@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 80%;
+}
+
+article,
+details,
+figcaption,
+figure,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+body {
+    font: 12px/18px Arial Narrow, sans-serif;
+    width: 100%;
+    height: 100%;
+    background-color: #5845a7;
+}
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+}
+
+
+/* Middle
+-----------------------------------------------------------------------------*/
+
+.middle {
+    width: 100%;
+    position: fixed;
+}
+
+.middle:after {
+    display: table;
+    clear: both;
+    content: '';
+}
+
+/* For login.html
+-----------------------------------------------------------------------------*/
+
+.box-entering {
+    width: 500px;
+    height: 470px;
+    background-color: #fff;
+    -webkit-border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.box-logo {
+    width: 100px;
+    height: 100px;
+    margin: 20px 0px 15px 200px;
+}
+
+.box-title {
+    font-size: 28px;
+    line-height: 8px;
+    padding: 15px 0px 30px 150px;
+    color: #3b3b3b;
+}
+
+.box-input {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    padding: 7px;
+    margin: 20px 0px 7px 65px;
+    width: 350px;
+    background-color: #eee;
+    border: 2px solid #eee;
+}
+
+input::placeholder {
+    color: #999;
+    font-size: 13px;
+}
+
+.box-send {
+    float: center;
+	padding: 6px;
+    width: 170px;
+    height: 40px;
+    font-size: 17px;
+    color: #fff;
+    margin: 70px 0px 20px 165px;
+    background-color: #5845a7;
+    border: 2px solid #5845a7;
+    -webkit-border-radius: 13px;
+}
+
+.box-send:hover {
+    background-color: #372579;
+    border: 2px solid #372579;
+}
+
+.box-restore-pass a {
+    font-size: 15px;
+    float: right;
+    color: #009cf0;
+    font-weight: 500;
+    margin: 10px 65px 20px 0px;
+}
+
+/* For forgot_password.html
+-----------------------------------------------------------------------------*/
+
+.reset-box {
+    width: 400px;
+    height: 350px;
+    background-color: #fff;
+    -webkit-border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.reset-title {
+    font-size: 28px;
+    line-height: 8px;
+    padding: 65px 0px 30px 93px;
+    color: #3b3b3b;
+}
+
+.reset-input {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    padding: 7px;
+    margin: 20px 0px 7px 50px;
+    width: 270px;
+    background-color: #eee;
+    border: 2px solid #eee;
+}
+
+/* Для placeholder в reset-input*/
+
+.reset-info {
+    margin: 40px 0px 7px 80px;
+    font-style: italic;
+    font-size: 15px;
+    color: #666;
+}
+
+.reset-send {
+    float: center;
+	padding: 6px;
+    width: 140px;
+    height: 40px;
+    font-size: 17px;
+    color: #fff;
+    margin: 50px 0px 20px 125px;
+    background-color: #5845a7;
+    border: 2px solid #5845a7;
+    -webkit-border-radius: 13px;
+}
+
+.reset-send:hover {
+    background-color: #372579;
+    border: 2px solid #372579;
+}
+
+
+/* For update_password.html
+-----------------------------------------------------------------------------*/
+
+.update-send {
+    float: center;
+	padding: 6px;
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    color: #fff;
+    margin: 20px 0px 20px 145px;
+    background-color: #5845a7;
+    border: 2px solid #5845a7;
+    -webkit-border-radius: 13px;
+}
+
+.update-send:hover {
+    background-color: #372579;
+    border: 2px solid #372579;
+}
+
+.content {
+    padding: 0 270px 0 0;
+}
