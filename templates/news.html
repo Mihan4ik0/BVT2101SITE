@@ -1,79 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>News</title>
-	<link href="static/css/news.css" rel="stylesheet">
+	<link href="static/css/base.css" rel="stylesheet">
 </head>
+
 <body>
-	<div class="hearder">
-		<nav>
-			<ul class="topmenu">
-				<li><img src="/static/img/mtuci-logo.png" width="100" height="100"></li>
-				<li><a href="/main.html">Main page</a></li>
-				<li><a href="/tt_home.html">Timetable/Homework</a></li>
-				<li><a href="/news.html">News</a></li>
-				<li>
-					<img src="/static/img/avatar.jpg" width="100" height="100" style="vertical-align: container" >
-						<ul class="submenu">
-							<li><a href="/addinfo.html">Add Info</a></li>
-							<li><a href="/resetpassword.html">Reset password</a></li>
-							<li><a href="/login.html">Exit</a></li>
-							
-						</ul>
-				</li>
-			</ul>
-		</nav>
-	</div>
+
+	<header class="header">
+			<div class="top-menu">
+				<img src="/static/img/mtuci-logo.png" class="header-logo">
+				<div class="header-category">
+					<ul>
+						<li><a href="/main.html">Main page</a></li>
+						<li><a href="/tt_home.html">Timetable/Homework</a></li>
+						<li><a href="/news.html">News</a></li>
+					</ul>
+				</div>
+				<div class="header-avatar">
+					<img src="/static/img/avatar.png" class="header-icon">
+					<img src="/static/img/arrow-down.png" class="header-arrow-down">
+				</div>
+				<!--<div class="head-avatar-menu">
+					<a href="/addinfo.html">Add information</a>
+					<a href="/update_password.html">Update password</a>
+					<a href="/login.html">Exit</a>
+				</div> -->
+			</div>
+	</header>
+
 	<div class="container">
-		<h1>News</h1>
-		<br>
+		<h1 class="page-title">News</h1>
+		<div class="news-list">
+
+			<div class="news-box" id="1">
+				<p class="news-box-date"><b>15.04.2022</b></p>
+				<p class="news-box-name">(Иван Старосветов)</p>
+				<p class="news-box-text"> Допустим пересдача </p>
+			</div>
+
+			<div class="news-box" id="2">
+				<p class="news-box-date"><b>25.04.2022</b></p>
+				<p class="news-box-name">(Иван Старосветов)</p>
+				<p class="news-box-text"> Допустим команда ничего не делает </p>
+			</div>
+
+			<div class="news-box" id="3">
+				<p class="news-box-date"><b>25.04.2022</b></p>
+				<p class="news-box-name">(Иван Старосветов)</p>
+				<p class="news-box-text"> Допустим команда ничего не делает </p>
+			</div>
+
+			<div class="news-box" id="4">
+				<p class="news-box-date"><b>25.04.2022</b></p>
+				<p class="news-box-name">(Иван Старосветов)</p>
+				<p class="news-box-text"> Допустим команда ничего не делает </p>
+			</div>
+
+			<div class="news-box" id="5">
+				<p class="news-box-date"><b>25.04.2022</b></p>
+				<p class="news-box-name">(Иван Старосветов)</p>
+				<p class="news-box-text"> Допустим команда ничего не делает </p>
+			</div>
+
+		</div>
+	</div>
+
+	<footer class="footer">
+		<p><b>Наша команда:</b></p>
 		<ul>
-			<li class="Data"><b>15.04.2022</b></li>
-			<li class="Name">(Иван Старосветов)</li>
-			<p> Допустим пересдача </p>
+			<li><a href="https://vk.com/id293317419">Михаил Козей</a></li>
+			<li><a href="https://vk.com/fic1ion">Елена Туркова</a></li>
+			<li><p>&#173;</p></li>
+			<li><a href="https://vk.com/idserilflex">Кирилл Смирнов</a></li>
+			<li><a href="https://vk.com/id66652366">Семён Старшинов</a></li>
+			<li><a href="https://vk.com/wwonzxc">Фёдор Андреенков</a></li>
+			<li><p>&#173;</p></li>
+			<li><a href="https://vk.com/vvviikkkaaa">Вербицкая Виктория</a></li>
+			<li><a href="https://vk.com/0llit">Старосветов Иван</a></li>
 		</ul>
-	</div>
-	<div class="container">
+
+		<p><b>Контактная информация</b></p>
 		<ul>
-			<li class="Data"><b>25.04.2022</b></li>
-			<li class="Name">(Иван Старосветов)</li>
-			<p> Допустим команда ничего не делает </p>
+			<li>Email: <a href="mailto:mtuci@mtuci.ru">mtuci@mtuci.ru</a></li>
+			<li>Деканат: <a href="tel:8 (495) 925 10-67">8 (495) 925 10-67</a></li>
+			<li>Куратор: <a href="https://vk.com/elza_krrr">https://vk.com/elza_krrr</a></li>
+			<li>Староста: <a href="https://vk.com/0llit">https://vk.com/0llit</a></li>
+			<li>Адрес: г.Москва, ул.Авиамоторная, д.8а</li>
 		</ul>
-	</div>
-	<div class="footer">
-		<footer>
-			<ul>
-				<li><b>Наша команда:</b></li>
-			</ul>
-			<ul>
-				<li><a href="https://vk.com/id293317419" style="text-decoration: none;">Михаил Козей</a></li>
-				<li><a href="https://vk.com/fic1ion" style="text-decoration: none;">Елена Туркова</a></li>
-				<li><p>&#173;</p></li>
-				<li><a href="https://vk.com/idserilflex" style="text-decoration: none;">Кирилл Смирнов</a></li>
-				<li><a href="https://vk.com/id66652366" style="text-decoration: none;">Семён Старшинов</a></li>
-				<li><a href="https://vk.com/wwonzxc" style="text-decoration: none;">Фёдор Андреенков</a></li>
-				<li><p>&#173;</p></li>
-				<li><a href="https://vk.com/vvviikkkaaa" style="text-decoration: none;">Вербицкая Виктория</a></li>
-				<li><a href="https://vk.com/0llit" style="text-decoration: none;">Старосветов Иван</a></li>
-			</ul>
-			<ul>
-				<li><b>Контактная информация</b></li>
-				<br>
-				<li>Email: <a href="mailto:mtuci@mtuci.ru"  style="text-decoration: none;">mtuci@mtuci.ru</a></li>
-				<li>Деканат: <a href="tel:8 (495) 925 10-67"  style="text-decoration: none;">8 (495) 925 10-67</a></li>
-				<li>Куратор: <a href="https://vk.com/elza_krrr"  style="text-decoration: none;">https://vk.com/elza_krrr</a></li>
-				<li>Староста: <a href="https://vk.com/0llit"  style="text-decoration: none;">https://vk.com/0llit</a></li>
-				<li>Адрес:<br> г.Москва, ул.Авиамоторная, д.8а</li>
-			</ul>
-			<ul>
-				<li><b>Дистанционное обучение:</b></li>
-				<br>
-				<li>Сайт МТУСИ: <a href="https://mtuci.ru" style="text-decoration: none;">https://mtuci.ru</a></li>
-				<li>Группа: <a href="https://vk.com//club206655080" style="text-decoration: none;">https://vk.com//club206655080</a></li>
-				<li>Чат группы: <a href="https://t.me/joinchat/yFfe6Eb5PCxLZTLy" style="text-decoration: none;">https://t.me/joinchat/yFfe6Eb5PCxLZTLy</a></li>
-			</ul>
-		</footer>
-	</div>
+
+		<p><b>Дистанционное обучение:</b></p>
+		<ul>
+			<li>Сайт МТУСИ: <a href="https://mtuci.ru">https://mtuci.ru</a></li>
+			<li>Группа: <a href="https://vk.com//club206655080">https://vk.com//club206655080</a></li>
+			<li>Чат группы: <a href="https://t.me/joinchat/yFfe6Eb5PCxLZTLy">https://t.me/joinchat/yFfe6Eb5PCxLZTLy</a></li>
+		</ul>
+
+	</footer>
+
 </body>
 </html>

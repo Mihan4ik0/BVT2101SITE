@@ -1,26 +1,79 @@
 /* For news.html
 -----------------------------------------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+}
 
-/*Header ------------------------------------------------------------*/
+html {
+    height: 80%;
+}
 
 body {
-	background:#6a44d0;
-	font-family:"Bahnschrift";
+	background: #5845a7;
+	font: 12px/18px Arial Narrow, sans-serif;
+}
+
+/*Header
+ ------------------------------------------------------------*/
+
+.top-menu {
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+}
+
+.header-logo {
+    width: 80px;
+    height: 80px;
+    margin: 10px 0px 15px 50px;
+    float: left;
+}
+
+.header-category a {
+    font-size: 25px;
+    text-decoration: none;
+    margin: 0px 0px 0px 100px;
+    float: center;
+}
+
+.header-category li {
+    display: inline-block;
+    text-align: center;
+    margin: 40px 0px 0px 0px;
+}
+
+.header-avatar {
+    margin: 0px 0px 0px 0px;
+    float: right;
+}
+
+.header-icon {
+    width: 80px;
+    height: 80px;
+}
+
+.header-arrow-down {
+    width: 25px;
+    height: 25px;
+}
+
+.head-avatar-menu {
 
 }
+
 
 /* применяем inline-block позиционирование к элементам навигации */
 nav ul li {
 		margin: 0px 100px 0 0;
 		display:inline-block;
-				}
+}
 
 /* стилизуем ссылки */
 nav a {
 		font-size:25px;
 		line-height: 60px;
 		text-color:#C0C0C0;
-				}
 }
 
 ul {
@@ -39,8 +92,8 @@ ul.topmenu > li {
     float: left;
     /* Считаем координаты относительно исходного места*/
     position: relative;
-
 }
+
 ul.topmenu > li > a {
     /* Делаю элементы блочными: */
     display: block;
@@ -50,13 +103,13 @@ ul.topmenu > li > a {
     padding: 20px;
     /* Убираю форматирование*/
     text-decoration: none;
-
-
 }
+
 ul.topmenu > li > img:hover {
     /* Задаю цвет при наведении. */
     background-color: white;
 }
+
 ul.submenu {
     position: absolute;
     width: 300px;
@@ -64,12 +117,13 @@ ul.submenu {
     left:-70px;
     /* Делаю субменю скрытыми. */
     display: none;
-
 }
+
 ul.submenu > li {
     /* Блочное расположение элементов*/
     display: block;
 }
+
 ul.submenu > li > a {
     /* Делаю элементы блочными. */
     display: block;
@@ -83,36 +137,38 @@ ul.submenu > li > a {
     background-color: silver;
 	font-size:20px;
 }
+
 ul.submenu > li > img:hover {
     /* Цвет бэкграунда при наведении. */
     background-color: #eb9316;
     /* Задаю подчеркивание*/
     text-decoration: underline;
 	img:"submenu_open.png";
-
 }
+
 ul.submenu > li > a:hover {
     /* Цвет бэкграунда при наведении. */
     background-color:  #c8c8c8;
     /* Задаю подчеркивание*/
     text-decoration: none;
-
 }
+
 ul.topmenu > li:hover > ul.submenu {
     /* Делаю элементы блочными. */
     display: block;
 }
+
 ul.topmenu > li > a:hover {
     /* цвет текста при наведнии */
     color:  silver;
-
 }
 
-div.hearder > nav > ul > li{
+
+div.header > nav > ul > li{
 	background:white;
-
 }
-div.hearder > nav > ul {
+
+div.header > nav > ul {
 	background:white;
 	padding-bottom:105px;
 	border-radius:10px;
@@ -122,8 +178,8 @@ div.hearder > nav > ul {
 
 div.container {
 	margin:50px 60px;
-
 }
+
 h1 {
 	font-size:50px;
 	color:silver;

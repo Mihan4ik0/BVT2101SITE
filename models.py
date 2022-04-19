@@ -29,6 +29,7 @@ class Timetable(db.Model):
     homework = db.Column(db.String(1000), nullable=False)
     date_ti = db.relationship('Dates')
 
+
 # Таблица для дат (ч/м/г)
 class Dates(db.Model):
     id = db.Column(db.Integer(), primary_key=True)
