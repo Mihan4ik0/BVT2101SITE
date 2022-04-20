@@ -1,6 +1,6 @@
-from main import app
+from main import app, db
 from flask import render_template, redirect, url_for, request
-from flask_login import current_user, login_user
+from flask_login import current_user, login_user, logout_user
 from models import Users
 
 
@@ -23,11 +23,22 @@ def reset():
     return render_template("forgot_password.html")
 
 
-@app.route('/update')
+@app.route('/update', methods=['GET', 'POST'])
 def update():
+    if current_user.is_authenticated:
+        if request.method == 'POST':
+            if current_user.password == request.form.get('old_password') and request.form.get('n_password1') == request.form.get('n_password2'):
+                current_user.password = request.form.get('n_password1')
+                db.session.commit()
     return render_template("update_password.html")
 
 
 @app.route('/news')
 def news():
     return render_template("news.html")
+
+
+@app.route('/logout')
+def logout():
+    logout_user()
+    return redirect(url_for('login'))
