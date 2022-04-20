@@ -1,5 +1,7 @@
-from flask import Flask, render_template
+from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
+from flask_login import LoginManager
+from flask_migrate import Migrate
 
 app = Flask(__name__)
 app.debug = True
@@ -7,26 +9,14 @@ app.config['SECRET_KEY'] = 'a really really really really long secret key'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///stud_ws.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
+migrate = Migrate(app, db)
+login = LoginManager()
+db.init_app(app)
+login.init_app(app)
 
 
-@app.route('/')
-def login():
-    return render_template("login.html")
 
-
-@app.route('/reset')
-def reset():
-    return render_template("forgot_password.html")
-
-
-@app.route('/update')
-def update():
-    return render_template("update_password.html")
-
-
-@app.route('/news')
-def news():
-    return render_template("news.html")
+from routes import *
 
 
 if __name__ == "__main__":
