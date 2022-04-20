@@ -1,13 +1,17 @@
 from datetime import datetime
-from main import db
+from main import db, login
+from flask_login import UserMixin
 
 
 # Таблица для данных студентов
-class Users(db.Model):
+class Users(db.Model, UserMixin):
     id = db.Column(db.Integer(), primary_key=True)
     email = db.Column(db.String(80), nullable=False)
     password = db.Column(db.String(80), nullable=False)
 
+    @login.user_loader
+    def load_user(id):
+        return Users.query.get(int(id))
 
 # Таблица информации для студентов
 class News(db.Model):
