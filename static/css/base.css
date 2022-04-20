@@ -6,7 +6,7 @@
 }
 
 html {
-    height: 80%;
+    height: 100%;
 }
 
 body {
@@ -16,220 +16,136 @@ body {
 
 /*Header
  ------------------------------------------------------------*/
-
-.top-menu {
+.header {
     width: 100%;
     height: 100px;
     background-color: #fff;
 }
 
+.top-menu {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
 .header-logo {
     width: 80px;
     height: 80px;
-    margin: 10px 0px 15px 50px;
-    float: left;
+    margin: 0px 20px 0px 0px;
 }
 
 .header-category a {
     font-size: 25px;
     text-decoration: none;
-    margin: 0px 0px 0px 100px;
-    float: center;
+    margin: 0px 50px 0px 50px;
+    color: #000;
+    font-weight: bold;
 }
 
 .header-category li {
     display: inline-block;
     text-align: center;
-    margin: 40px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
 }
 
 .header-avatar {
-    margin: 0px 0px 0px 0px;
-    float: right;
+    margin: 7px 0px 0px 0px;
 }
 
 .header-icon {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
+    margin: 0px 0px 0px 20px;
 }
 
 .header-arrow-down {
     width: 25px;
     height: 25px;
+    margin: 0px 0px 30px 0px;
 }
 
 .head-avatar-menu {
 
 }
 
+/*Container
+ ------------------------------------------------------------*/
 
-/* применяем inline-block позиционирование к элементам навигации */
-nav ul li {
-		margin: 0px 100px 0 0;
-		display:inline-block;
+.container {
 }
 
-/* стилизуем ссылки */
-nav a {
-		font-size:25px;
-		line-height: 60px;
-		text-color:#C0C0C0;
+.page-title {
+    color: #b9b9b9;
+    font-size: 50px;
+    margin: 40px 0px 0px 30px;
 }
 
-ul {
-    /* Убираю маркеры у списка*/
-    list-style: none;
-    /* Делаю элементы блочными. */
-    display: block;
-    /* Убираю отступы. */
-    margin:0px;
-    /* Убираю еще отступы! */
-    padding:0px;
+.news-box {
+    width: 850px;
+    height: 160px;
+    background-color: #fff;
+    -webkit-border-radius: 20px;
+    margin: 30px 0px 30px 0px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-ul.topmenu > li {
-    /* Задаю выравнивание и позиционирование. */
-    float: left;
-    /* Считаем координаты относительно исходного места*/
-    position: relative;
+.news-box-date {
+    font-size: 30px;
+    padding: 30px 0px 0px 30px;
+    color: #000;
+    font-weight: bold;
+    display: inline-block;
 }
 
-ul.topmenu > li > a {
-    /* Делаю элементы блочными: */
-    display: block;
-    /* Задаю белый цвет. */
-    color: black;
-    /* Задаю отступ 10px. */
-    padding: 20px;
-    /* Убираю форматирование*/
-    text-decoration: none;
+.news-box-name {
+    font-size: 17px;
+    margin: 0px 0px 0px 33px;
+    color: #7a7d7e;
+    display: inline-block;
 }
 
-ul.topmenu > li > img:hover {
-    /* Задаю цвет при наведении. */
-    background-color: white;
+.news-box-text {
+    font-size: 20px;
+    margin: 40px 0px 0px 33px;
+    color: #000;
 }
 
-ul.submenu {
-    position: absolute;
-    width: 300px;
-    top: 37px;
-    left:-70px;
-    /* Делаю субменю скрытыми. */
-    display: none;
-}
+/*Footer
+ ------------------------------------------------------------*/
 
-ul.submenu > li {
-    /* Блочное расположение элементов*/
-    display: block;
-}
-
-ul.submenu > li > a {
-    /* Делаю элементы блочными. */
-    display: block;
-    /* Убираю форматирование*/
-    text-decoration: none;
-    /* Задаю отступ. */
-    padding: 10px;
-    /* Задаю цвет. */
-    color:  #6a44d0;
-    /* Еще цвет. */
-    background-color: silver;
-	font-size:20px;
-}
-
-ul.submenu > li > img:hover {
-    /* Цвет бэкграунда при наведении. */
-    background-color: #eb9316;
-    /* Задаю подчеркивание*/
-    text-decoration: underline;
-	img:"submenu_open.png";
-}
-
-ul.submenu > li > a:hover {
-    /* Цвет бэкграунда при наведении. */
-    background-color:  #c8c8c8;
-    /* Задаю подчеркивание*/
-    text-decoration: none;
-}
-
-ul.topmenu > li:hover > ul.submenu {
-    /* Делаю элементы блочными. */
-    display: block;
-}
-
-ul.topmenu > li > a:hover {
-    /* цвет текста при наведнии */
-    color:  silver;
-}
-
-
-div.header > nav > ul > li{
-	background:white;
-}
-
-div.header > nav > ul {
-	background:white;
-	padding-bottom:105px;
-	border-radius:10px;
-}
-
-/*Container-----------------------------------------*/
-
-div.container {
-	margin:50px 60px;
-}
-
-h1 {
-	font-size:50px;
-	color:silver;
-}
-div.container > ul > li {
-	display:inline-block;
-	padding:15px;
-}
-div.container > ul  {
-	display:block;
-	background:white;
-	border-radius:15px;
-}
-div.container >ul > p {
-	font-size:20px;
-	padding:20px;
-}
-/* Размер и цвет Даты , чел , проверки */
-li.Data {
-	font-size:25px;
-	font-stretch:10px;
-}
-li.Name {
-	font-size:20px;
-	color:silver;
-}
-
-
-/*Footer-------------------------------*/
-
-div.footer{
-	/*прикрепляю подвал*/
-	position: absolute;
-    left: 0;
-    bottom: 0;
+.footer {
     width: 100%;
-    height: 50px;
+    height: 10%;
+    background-color: #ccc;
+    display: flex;
 }
-div.footer > footer {
-	background: #7a7d7e;
-	display:block;
-	border-radius:10px;
 
+.footer-category {
+    margin: 0px 100px 0px 30px;
 }
-div.footer > footer > ul > li {
-	display:block;
-	font-size: 15px;
 
+.footer-title {
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    display: inline-block;
+    margin: 20px 0px 0px 0px;
 }
-div.footer > footer > ul {
-	display:inline-table;
-	position:bottom;
+
+.footer-category li {
+    list-style-type: none;
+    font-size: 13px;
+    padding: 0px 0px 0px 0px;
+}
+
+.footer-category a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #000;
+    padding: 0px 0px 0px 0px;
 }
