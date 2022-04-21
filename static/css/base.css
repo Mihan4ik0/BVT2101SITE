@@ -74,6 +74,7 @@ body {
 	padding: 20px;
 	position: absolute;
 	margin: 310px 0px 0px 755px;
+	display: none;
 }
 
 .header-avatar-menu:before {
