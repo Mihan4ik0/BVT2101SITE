@@ -62,3 +62,8 @@ def news():
 def logout():
     logout_user()
     return redirect(url_for('login'))
+
+
+@app.route('/add')
+def add():
+    return render_template("add_information.html")

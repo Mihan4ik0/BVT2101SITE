@@ -24,13 +24,13 @@
 					<img src="/static/img/arrow-down.png" class="header-arrow-down" onclick="userActions()">
 				</div>
 				<div class="header-avatar-menu">
-					<form action="/addinfo.html" target="_blank">
+					<form action="{{url_for('add')}}">
 						<button class="avatar-menu-actions">Add information</button>
 					</form>
-					<form action="{{url_for('update')}}" target="_blank">
+					<form action="{{url_for('update')}}">
 						<button class="avatar-menu-actions">Update password</button>
 					</form>
-					<form action="{{url_for('login')}}" target="_blank">
+					<form action="{{url_for('login')}}">
 						<button class="avatar-menu-actions">Exit</button>
 					</form>
 				</div>
