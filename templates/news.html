@@ -16,18 +16,24 @@
 					<ul>
 						<li><a href="/main.html">Main page</a></li>
 						<li><a href="/tt_home.html">Timetable/Homework</a></li>
-						<li><a href="/news.html">News</a></li>
+						<li><a href="{{url_for('news')}}">News</a></li>
 					</ul>
 				</div>
 				<div class="header-avatar">
 					<img src="/static/img/avatar.png" class="header-icon">
-					<img src="/static/img/arrow-down.png" class="header-arrow-down">
+					<img src="/static/img/arrow-down.png" class="header-arrow-down" onclick="userActions()">
 				</div>
-				<!--<div class="head-avatar-menu">
-					<a href="/addinfo.html">Add information</a>
-					<a href="/update_password.html">Update password</a>
-					<a href="/login.html">Exit</a>
-				</div> -->
+				<div class="header-avatar-menu">
+					<form action="/addinfo.html" target="_blank">
+						<button class="avatar-menu-actions">Add information</button>
+					</form>
+					<form action="{{url_for('update')}}" target="_blank">
+						<button class="avatar-menu-actions">Update password</button>
+					</form>
+					<form action="{{url_for('login')}}" target="_blank">
+						<button class="avatar-menu-actions">Exit</button>
+					</form>
+				</div>
 			</div>
 	</header>
 
@@ -104,6 +110,6 @@
 		</div>
 
 	</footer>
-
+	<script type="text/javascript" src="./static/js/script.js"></script>
 </body>
 </html>
