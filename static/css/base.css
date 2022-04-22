@@ -1,0 +1,201 @@
+/* For news.html
+-----------------------------------------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+	background: #5845a7;
+	font: 12px/18px Arial Narrow, sans-serif;
+}
+
+/*Header
+ ------------------------------------------------------------*/
+.header { /* Верхняя панель */
+    width: 105%;
+    height: 120px;
+    background-color: #fff;
+}
+
+.top-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+.header-logo { /* Лого МТУСИ */
+    width: 95px;
+    height: 90px;
+    margin: 0px 48px 10px 0px;
+}
+
+.header-category a { /* Пункты меню в заголовке */
+    font-size: 22px;
+    text-decoration: none;
+    margin: 0px 30px 0px 45px;
+    color: #000;
+    font-weight: bold;
+    border: none;
+}
+
+.header-category li {
+    display: inline-block;
+    text-align: center;
+    margin: 35px 2px 5px 0px;
+}
+
+.header-avatar { /* Расположение знака пользователя */
+    margin: 8px 5px 0px 5px;
+}
+
+.header-icon { /* Размеры знака пользователя */
+    width: 90px;
+    height: 90px;
+    margin: 0px 10px 30px 20px;
+
+}
+
+.header-arrow-down { /* Кнопка выпадающего меню */
+    background-color: #fff;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    width: 35px;
+    height: 30px;
+    margin: 30px 10px 40px 10px;
+}
+
+.dropdown { /* Контейнер <div>- нужно для выпадающего меню*/
+    position: relative;
+    display: inline-block;
+}
+
+.header-avatar-menu { /* Выподающее меню */
+    display: none;
+    z-index: 1;
+    background-color: #ccc;
+	border-radius: 25px;
+	height: 130px;
+	width: 150px;
+	padding: 25px;
+	position: absolute;
+	margin: 280px 0px 0px 850px;
+}
+
+/*.header-avatar-menu:before { Стрелка выподающего меню
+	border: 25px solid transparent;
+	border-bottom-color: #ccc;
+	position: absolute;
+	bottom: 100%;
+	right: 65px;
+	content: '';
+}*/
+
+/*.header-avatar-menu:after {  2 Стрелка выподающего меню
+	border: 5px solid transparent;
+	border-bottom-color: #ccc;
+	position: absolute;
+	bottom: 100%;
+	right: 75px;
+	content:'';
+}*/
+
+.avatar-menu-actions { /* Пункты выпадающего меню */
+    width: 150px;
+    height: 40px;
+    -webkit-border-radius: 10px;
+    background-color: #fff;
+    font-size: 16px;
+    margin: 0px 10px 10px 3px;
+    color: #6a44d0;
+    border: none;
+}
+
+/*Container
+ ------------------------------------------------------------*/
+
+.container {
+}
+
+.page-title { /* Надпись News */
+    color: rgba(255, 255, 255, 0.5); /* Полупрозрачный белый цвет */
+    font-size: 55px;
+    margin: 40px 10px 0px 18px;
+}
+
+.news-box { /* Поля с новостями */
+    width: 950px;
+    height: 175px;
+    background-color: #fff;
+    -webkit-border-radius: 30px;
+    margin: 25px 0px 25px 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.news-box-date { /* Дата новостей */
+    font-size: 35px;
+    padding: 30px 0px 0px 30px;
+    color: #000;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.news-box-name { /* Автор новости */
+    font-size: 20px;
+    margin: 0px 0px 0px 30px;
+    color: #7a7d7e;
+    display: inline-block;
+}
+
+.news-box-text { /* Текст новости */
+    font-size: 25px;
+    margin: 40px 0px 0px 33px;
+    color: #000;
+}
+
+/*Footer
+ ------------------------------------------------------------*/
+
+.footer { /* информация о сайте и контакты */
+    width: 105%;
+    height: 1000px;
+    background-color: #ccc;
+    display: flex;
+}
+
+.footer-category { /* Список команды */
+    margin: 30px 100px 20px 10px;
+
+}
+
+.footer-title { /* Заголовки в нижней части страницы */
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    display: inline-block;
+    margin: 30px 0px 20px 20px;
+}
+
+.footer-category li {
+    list-style-type: none;
+    font-size: 13px;
+    padding: 0px 0px 0px 0px;
+}
+
+.footer-category a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #000;
+    padding: 0px 0px 0px 0px;
+}
