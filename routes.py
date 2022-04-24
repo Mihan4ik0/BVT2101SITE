@@ -58,6 +58,11 @@ def news():
     return render_template("news.html")
 
 
+@app.route('/tt_home')
+def tt_home():
+    return render_template("timetable_homework.html")
+
+
 @app.route('/logout')
 def logout():
     logout_user()

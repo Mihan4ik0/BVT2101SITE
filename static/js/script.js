@@ -1,3 +1,4 @@
+var selectItem;
 //Скрываем и показываем элемент header на странице
 function userActions() {
     let el = document.getElementsByClassName("header-avatar-menu");
@@ -8,9 +9,10 @@ function userActions() {
             el[i].style.display = 'block';
     }
 }
-//Скрываем и показываем элементы добавления на addinfo
+//Скрываем и показываем элементы добавления на add_information.html
 function categoryActions(select) {
     let elem = document.getElementsByClassName("add-info-category");
+    window.selectItem = select.value;
     for (let i = 0; i < elem.length; i++) {
         if (select.value == '0') {
             document.getElementsByClassName("add-date")[i].style.visibility = 'hidden';
@@ -33,3 +35,4 @@ function categoryActions(select) {
         }
     }
 }
+

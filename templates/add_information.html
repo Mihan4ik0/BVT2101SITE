@@ -9,7 +9,7 @@
 <body>
     <h1 class="add-title">Add Information</h1>
     <div class="container">
-        <form method = "POST" action="/add">
+        <form method = "POST" onsubmit="addCheckInfo()">
             <div class="add-category">
                 <p class="add-list-category">Выберите категорию:</p>
                 <select class="add-info-category" name="category" onchange="categoryActions(this)">
@@ -21,17 +21,17 @@
 
             <div class="add-date">
                 <p class="add-list-date">Дата выполнения:</p>
-                <input type="date" name="begin" class="add-info-date" placeholder="ДД-ММ-ГГГГ" value="" min="1997-01-01" max="2030-12-31">
+                <input type="date" name="begin" class="add-info-date" placeholder="ДД-ММ-ГГГГ" value="" min="1997-01-01" max="2030-12-31" required>
             </div>
 
             <div class="add-text">
                 <p class="add-list-text">Введите текст:</p>
-                <textarea class = "add-info-text" name = "body" rows="3" cols="21" ></textarea>
+                <textarea class = "add-info-text" name = "body" rows="3" cols="21" required></textarea>
             </div>
 
             <div class="add-subject">
                 <p class="add-list-subject">Предмет:</p>
-                <input class="add-info-subject" value="" maxlength="64" name="title">
+                <input class="add-info-subject" value="" maxlength="64" name="title" required>
             </div>
             <button type = "submit" class="add-sending">Publish</button>
 
