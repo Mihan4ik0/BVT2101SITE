@@ -17,7 +17,7 @@ body {
 /*Header
  ------------------------------------------------------------*/
 .header { /* Верхняя панель */
-    width: 105%;
+    width: 1550px;
     height: 120px;
     background-color: #fff;
 }
@@ -87,7 +87,7 @@ body {
 	width: 150px;
 	padding: 25px;
 	position: absolute;
-	margin: 280px 0px 0px 850px;
+	margin: 280px 0px 0px 820px;
 }
 
 /*.header-avatar-menu:before { Стрелка выподающего меню
@@ -132,11 +132,11 @@ body {
 }
 
 .news-box { /* Поля с новостями */
-    width: 950px;
-    height: 175px;
+    width: 1300px;
+    height: 160px;
     background-color: #fff;
-    -webkit-border-radius: 30px;
-    margin: 25px 0px 25px 0px;
+    -webkit-border-radius: 25px;
+    margin: 50px 0px 30px 0px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -151,7 +151,7 @@ body {
 
 .news-box-name { /* Автор новости */
     font-size: 20px;
-    margin: 0px 0px 0px 30px;
+    margin: 0px 0px 10px 30px;
     color: #7a7d7e;
     display: inline-block;
 }
@@ -166,14 +166,14 @@ body {
  ------------------------------------------------------------*/
 
 .footer { /* информация о сайте и контакты */
-    width: 105%;
-    height: 1000px;
+    width: 1550px;
+    height: 1184px;
     background-color: #ccc;
     display: flex;
 }
 
 .footer-category { /* Список команды */
-    margin: 30px 100px 20px 10px;
+    margin: 45px 1px 10px 25px;
 
 }
 
@@ -184,7 +184,7 @@ body {
     justify-content: center;
     flex-wrap: nowrap;
     display: inline-block;
-    margin: 30px 0px 20px 20px;
+    margin: 40px 1px 10px 20px;
 }
 
 .footer-category li {
