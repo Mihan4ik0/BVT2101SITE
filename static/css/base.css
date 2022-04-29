@@ -75,6 +75,7 @@ body {
 	position: absolute;
 	margin: 310px 0px 0px 755px;
 	display: none;
+	z-index: 2;
 }
 
 .header-avatar-menu:before {
@@ -229,9 +230,9 @@ table {
     background-color: #fff;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    width: 789px;
+    width: 792px;
     height: 40px;
-    margin: 110px 0px 0px 161px;
+    margin: 70px 0px 0px 159.5px;
 }
 
 .schedule-num {

@@ -1,4 +1,5 @@
 var selectItem;
+
 //Скрываем и показываем элемент header на странице
 function userActions() {
     let el = document.getElementsByClassName("header-avatar-menu");
@@ -9,6 +10,7 @@ function userActions() {
             el[i].style.display = 'block';
     }
 }
+
 //Скрываем и показываем элементы добавления на add_information.html
 function categoryActions(select) {
     let elem = document.getElementsByClassName("add-info-category");
@@ -36,3 +38,13 @@ function categoryActions(select) {
     }
 }
 
+//Показываем нужный цвет какой-либо пары
+let sType = document.getElementsByClassName("schedule-type");
+for (let i = 0; i < sType.length; i++) {
+    if (sType[i].innerHTML == 'лек')
+        sType[i].style.color = '#0f0';
+    else if (sType[i].innerHTML == 'пр')
+        sType[i].style.color = '#f66';
+    else if (sType[i].innerHTML == 'лаб')
+        sType[i].style.color = '#39f';
+}
