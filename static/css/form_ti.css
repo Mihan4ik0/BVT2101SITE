@@ -1,0 +1,111 @@
+/* Container for timetable_homework.html
+-----------------------------------------------------------------------------*/
+
+.schedule-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+.left-ti-arrow {
+    display: flex;
+    width: 150px;
+    height: 120px;
+    margin: 0px 0px 110px 0px;
+    display: inline-block;
+}
+
+.right-ti-arrow {
+    display: flex;
+    width: 150px;
+    height: 120px;
+    margin: 0px 0px 120px 0px;
+    display: inline-block;
+}
+
+table {
+    position: relative;
+    font-size: 21px;
+    border-radius: 10px;
+    border-spacing: 0;
+    text-align: left;
+    margin: 0px 0px 110px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+.header-schedule {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    background-color: #fff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 789px;
+    height: 40px;
+    margin: 70px 0px 0px 161px;
+}
+
+.schedule-num {
+    color: #fff;
+    font-weight: bold;
+}
+
+.schedule-sub {
+    color: #666;
+}
+
+.schedule-room {
+    color: #666;
+    font-weight: bold;
+}
+
+.schedule-tut {
+    font-size: 15px;
+    color: #fff;
+}
+
+.title-schedule {
+    color: #000;
+    font-size: 22px;
+}
+
+th {
+    text-shadow: 0 1px 1px #fff;
+    padding: 100px 30px;
+}
+
+th, td {
+    border-style: solid;
+    border-width: 20 1px 1px 0;
+    border-color: white;
+}
+
+th:first-child, td:first-child {
+    text-align: left;
+}
+
+th:first-child {
+    border-top-left-radius: 10px;
+}
+
+th:last-child {
+    border-top-right-radius: 10px;
+    border-right: none;
+}
+
+td {
+    padding: 15px 40px;
+    background: #c8bfe7;
+}
+
+tr:last-child td:first-child {
+    border-radius: 0 0 0 10px;
+}
+
+tr:last-child td:last-child {
+    border-radius: 0 0 10px 0;
+}

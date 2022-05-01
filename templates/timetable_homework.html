@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <title>Timetable/Homework</title>
 	<link href="static/css/base.css" rel="stylesheet">
+	<link href="static/css/form_ti.css" rel="stylesheet">
+	<link rel="SHORTCUT ICON" href="static/img/mtuci-logo.png" type="image/x-icon">
 </head>
 
 <body>
@@ -14,9 +16,9 @@
 				<img src="/static/img/mtuci-logo.png" class="header-logo">
 				<div class="header-category">
 					<ul>
-						<li><a href="/main.html">Main page</a></li>
-						<li><a href="{{url_for('tt_home')}}">Timetable/Homework</a></li>
-						<li><a href="{{url_for('news')}}">News</a></li>
+						<li><a href="{{url_for('main')}}" id="h1">Main page</a></li>
+						<li><a href="{{url_for('tt_home')}}" id="h2">Timetable/Homework</a></li>
+						<li><a href="{{url_for('news')}}" id="h3">News</a></li>
 					</ul>
 				</div>
 				<div class="header-avatar">
@@ -71,7 +73,7 @@
 						<p class="schedule-sub">Микропроцессорные системы</p>
 						<p class="schedule-tut">(Симонов С.Е.)</p>
 					</td>
-                    <td class="schedule-type">пр</td>
+                    <td class="schedule-type">лек</td>
                     <td class="schedule-room">221</td>
                     <td> <a href="https://www.google.ru/" class="schedule-home"></a></td>
                 </tr>
@@ -81,7 +83,7 @@
 						<p class="schedule-sub">Высшая математика</p>
 						<p class="schedule-tut">(Фроловичев С.М.)</p>
 					</td>
-                    <td class="schedule-type">лаб</td>
+                    <td class="schedule-type">лек</td>
                     <td class="schedule-room">301</td>
                     <td> <a href="https://www.google.ru/" class="schedule-home"></a></td>
                 </tr>

@@ -32,10 +32,6 @@ body {
     height: 100%;
 }
 
-
-/* Middle
------------------------------------------------------------------------------*/
-
 .middle {
     width: 100%;
     position: fixed;
@@ -176,7 +172,6 @@ input::placeholder {
     background-color: #372579;
     border: 2px solid #372579;
 }
-
 
 /* For update_password.html
 -----------------------------------------------------------------------------*/

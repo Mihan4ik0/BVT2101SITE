@@ -38,7 +38,7 @@ function categoryActions(select) {
     }
 }
 
-//Показываем нужный цвет какой-либо пары
+//Показываем нужный цвет типа пары
 let sType = document.getElementsByClassName("schedule-type");
 for (let i = 0; i < sType.length; i++) {
     if (sType[i].innerHTML == 'лек')
@@ -48,3 +48,11 @@ for (let i = 0; i < sType.length; i++) {
     else if (sType[i].innerHTML == 'лаб')
         sType[i].style.color = '#39f';
 }
+
+//Задаем цвет header в зависимости от выбранной страницы
+if (document.title == 'Main page')
+    document.getElementById("h1").style.color = '#999';
+if (document.title == 'Timetable/Homework')
+    document.getElementById("h2").style.color = '#999';
+if (document.title == 'News')
+    document.getElementById("h3").style.color = '#999';

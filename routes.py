@@ -12,20 +12,20 @@ from flask_mail import Message
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if current_user.is_authenticated:
-        return redirect(url_for('news'))
+        return redirect(url_for('main'))
     if request.method == 'POST':
         email = Users.query.filter_by(email=request.form.get('login')).first()
         if email is None or not request.form.get('password') == email.password:
             return redirect(url_for('login'))
         login_user(email)
-        return redirect(url_for('news'))
+        return redirect(url_for('main'))
     return render_template('login.html')
 
 
 @app.route('/reset', methods=['GET', 'POST'])
 def reset():
     if current_user.is_authenticated:
-        return redirect(url_for('news'))
+        return redirect(url_for('main'))
     if request.method == 'POST' and Users.query.filter_by(email=request.form.get('login')).first() is not None:
         email = request.form.get('login')
         chars = '+-/*!&$#?=@<>abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890'
@@ -72,3 +72,8 @@ def logout():
 @app.route('/add')
 def add():
     return render_template("add_information.html")
+
+
+@app.route('/main')
+def main():
+    return render_template("main_page.html")
