@@ -41,33 +41,14 @@
 
 	<div class="container">
 		<h1 class="page-title">News</h1>
-		<div class="news-list">
-
-			<div class="news-box" id="1">
-				<p class="news-box-date">22.04.2022</p>
-				<p class="news-box-text"> (Тест). 18.05 будут проставляться зачеты! </p>
-			</div>
-
-			<div class="news-box" id="2">
-				<p class="news-box-date">20.04.2022</p>
-				<p class="news-box-text"> (Тест). Просьба от С.М. Фроловичева подключиться в 17.00 </p>
-			</div>
-
-			<div class="news-box" id="3">
-				<p class="news-box-date">19.04.2022</p>
-				<p class="news-box-text"> (Тест). 12.05 контрольная по английскому </p>
-			</div>
-
-			<div class="news-box" id="4">
-				<p class="news-box-date">17.04.2022</p>
-				<p class="news-box-text"> (Тест). Физра будет 3 парой на улице </p>
-			</div>
-
-			<div class="news-box" id="5">
-				<p class="news-box-date">10.04.2022</p>
-				<p class="news-box-text"> (Тест). Пересдать ВТ можно 11.04. в 15 в 223 каб. </p>
-			</div>
-
+		<div id="news-list">
+			<!-- @addNews.js -->
+			<template id = "temp">
+				<div class="news-box" id="1">
+					<p class="news-box-date">Тест (22.04.2022)</p>
+					<p class="news-box-text"> (Тест). 18.05 будут проставляться зачеты! </p>
+				</div>
+			</template>
 		</div>
 	</div>
 
@@ -108,5 +89,6 @@
 
 	</footer>
 	<script type="text/javascript" src="./static/js/script.js"></script>
+	<script type="text/javascript" src="./static/js/addNews.js"></script>
 </body>
 </html>
