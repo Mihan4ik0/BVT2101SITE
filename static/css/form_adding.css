@@ -1,0 +1,121 @@
+/* For add_information.html
+-----------------------------------------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+	background: #5845a7;
+	font: 12px/18px Arial Narrow, sans-serif;
+}
+
+.add-title {
+    font-size: 60px;
+    color: #ccc;
+    text-align: center;
+    margin: 60px 0px 0px 0px;
+}
+
+.add-category {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.add-list-category {
+    font-size: 25px;
+    color: #000;
+    text-align: left;
+    margin: 60px 60px 0px 0px;
+}
+
+.add-info-category {
+    font-size: 20px;
+    text-align: center;
+    wight: 100px;
+    height: 35px;
+    margin: 60px 0px 0px 60px;
+}
+
+.add-date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    visibility: hidden;
+}
+
+.add-list-date {
+    font-size: 25px;
+    color: #000;
+    text-align: left;
+    margin: 60px 110px 0px 0px;
+}
+
+.add-info-date {
+    height: 35px;
+    font-size: 20px;
+    margin: 60px 0px 0px 105px;
+}
+
+.add-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    visibility: hidden;
+}
+
+.add-list-text {
+    font-size: 25px;
+    color: #000;
+    text-align: left;
+    margin: 60px 40px 0px 0px;
+}
+
+.add-info-text {
+    height: 35px;
+    margin: 60px 0px 0px 40px;
+    font-size: 25px;
+}
+
+.add-subject {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    visibility: hidden;
+}
+
+.add-list-subject {
+    font-size: 25px;
+    color: #000;
+    text-align: left;
+    margin: 60px 65px 0px 0px;
+}
+
+.add-info-subject {
+    wight: 200px;
+    height: 35px;
+    margin: 60px 0px 0px 65px;
+    font-size: 25px;
+}
+
+.add-sending {
+	padding: 6px;
+    width: 170px;
+    height: 40px;
+    font-size: 20px;
+    color: #5845a7;
+    margin: 70px 0px 20px 470px;
+    background-color: #ccc;
+    border: 2px solid #5845a7;
+    -webkit-border-radius: 13px;
+    visibility: hidden;
+}

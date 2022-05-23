@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Main page</title>
+	<link href="static/css/base.css" rel="stylesheet">
+	<link href="static/css/form_main.css" rel="stylesheet">
+	<link rel="SHORTCUT ICON" href="static/img/mtuci-logo.png" type="image/x-icon">
+</head>
+
+<body>
+
+	<header class="header">
+			<div class="top-menu">
+				<img src="/static/img/mtuci-logo.png" class="header-logo">
+				<div class="header-category">
+					<ul>
+						<li><a href="{{url_for('main')}}" id="h1">Main page</a></li>
+						<li><a href="{{url_for('tt_home')}}" id="h2">Timetable/Homework</a></li>
+						<li><a href="{{url_for('news')}}" id="h3">News</a></li>
+					</ul>
+				</div>
+				<div class="header-avatar">
+					<img src="/static/img/avatar.png" class="header-icon">
+					<img src="/static/img/arrow-down.png" class="header-arrow-down" onclick="userActions()">
+				</div>
+				<div class="header-avatar-menu">
+					<form action="{{url_for('add')}}">
+						<button class="avatar-menu-actions">Add information</button>
+					</form>
+					<form action="{{url_for('update')}}">
+						<button class="avatar-menu-actions">Update password</button>
+					</form>
+					<form action="{{url_for('logout')}}">
+						<button class="avatar-menu-actions">Exit</button>
+					</form>
+				</div>
+			</div>
+	</header>
+
+	<div class="container">
+		<h1 class="page-title">Main page</h1>
+		<div class="header-schedule">
+			<b class="title-schedule">Расписание на Вторник, 25.04.2022</b>
+		</div>
+		<div class="schedule-form">
+            <table>
+				<tr>
+					<td class="schedule-num">1</td>
+					<td>
+						<p class="schedule-sub">История</p>
+						<p class="schedule-tut">(Кунц Е.В.)</p>
+					</td>
+                    <td class="schedule-type">лек</td>
+                    <td class="schedule-room">227</td>
+                    <td> <a href="https://www.google.ru/" class="schedule-home"></a></td>
+                </tr>
+                <tr>
+                    <td class="schedule-num">2</td>
+					<td>
+						<p class="schedule-sub">Введение в информационные технологии</p>
+						<p class="schedule-tut">(Харасов К.Р.)</p>
+					</td>
+                    <td class="schedule-type">пр</td>
+                    <td class="schedule-room">ВЦ127</td>
+					<td> <a href="https://www.google.ru/" class="schedule-home"></a></td>
+                </tr>
+                <tr>
+                    <td class="schedule-num">3</td>
+					<td>
+						<p class="schedule-sub">Высшая математика</p>
+						<p class="schedule-tut">(Фроловичев С.М.)</p>
+					</td>
+                    <td class="schedule-type">пр</td>
+                    <td class="schedule-room">302</td>
+                    <td> <a href="https://www.google.ru/" class="schedule-home"></a></td>
+                </tr>
+                <tr>
+                    <td class="schedule-num">4</td>
+					<td>
+						<p class="schedule-sub">Элективные дисциплины по физической культуре</p>
+						<p class="schedule-tut">(Симкачёва Т.В.)</p>
+					</td>
+                    <td class="schedule-type">пр</td>
+                    <td class="schedule-room"></td>
+                    <td> <a href="https://www.google.ru/" class="schedule-home"></a></td>
+                </tr>
+                <tr>
+                    <td class="schedule-num">5</td>
+					<td>
+						<p class="schedule-sub"></p>
+						<p class="schedule-tut"> </p>
+					</td>
+                    <td class="schedule-type"> </td>
+                    <td class="schedule-room"> </td>
+                    <td> <a href="https://www.google.ru/" class="schedule-home"></a></td>
+                </tr>
+            </table>
+		</div>
+		<div class="news-form">
+			<b class="title-news">News</b>
+			<img src="/static/img/news-photo-1.png" class="photo-news" style = "margin: 50px 0px 0px 30px;">
+			<p class="news-date" style="margin: 205px 0px 0px 30px;">{{ posts[0].Dates.date }}</p>
+			<p class="news-text" style="margin: 5px 0px 0px 30px;"> {{ posts[0].News.info }} </p>
+
+			<img src="/static/img/news-photo-2.png" class="photo-news" style = "margin: 25px 0px 0px 30px;">
+			<p class="news-date" style="margin: 180px 0px 0px 30px;">{{ posts[1].Dates.date }}</p>
+			<p class="news-text" style="margin: 5px 0px 0px 30px;"> {{ posts[1].News.info }} </p>
+
+		</div>
+	</div>
+
+	<footer class="footer">
+
+		<p class="footer-title">Наша команда:</p>
+		<div class="footer-category">
+			<ul>
+				<li><a href="https://vk.com/id293317419">Михаил Козей</a></li>
+				<li><a href="https://vk.com/fic1ion">Елена Туркова</a></li>
+				<li><p>&#173;</p></li>
+				<li><a href="https://vk.com/idserilflex">Кирилл Смирнов</a></li>
+				<li><a href="https://vk.com/id66652366">Семён Старшинов</a></li>
+				<li><p>Фёдор Андреенков</p></li>
+				<li><p>&#173;</p></li>
+				<li><p>Виктория Вербицкая</p></li>
+				<li><p>Иван Старосветов</p></li>
+			</ul>
+		</div>
+		<div class="footer-category">
+			<ul>
+				<p class="footer-title">Контактная информация:</p>
+				<li>Email: <a href="mailto:mtuci@mtuci.ru">mtuci@mtuci.ru</a></li>
+				<li>Деканат: <a href="tel:8 (495) 925 10-67">8 (495) 925 10-67</a></li>
+				<li>Куратор: <a href="https://vk.com/elza_krrr">https://vk.com/elza_krrr</a></li>
+				<li>Староста: <a href="https://vk.com/0llit">https://vk.com/0llit</a></li>
+				<li>Адрес: г.Москва, ул.Авиамоторная, д.8а</li>
+			</ul>
+		</div>
+		<div class="footer-category">
+			<ul>
+				<p class="footer-title">Дистанционное обучение:</p>
+				<li>Сайт МТУСИ: <a href="https://mtuci.ru">https://mtuci.ru</a></li>
+				<li>Группа: <a href="https://vk.com//club206655080">https://vk.com//club206655080</a></li>
+				<li>Чат группы: <a href="https://t.me/+GipdMULlj-AyNWI6">https://t.me/joinchat/yFfe6Eb5PCxLZTLy</a></li>
+			</ul>
+		</div>
+
+	</footer>
+	<script type="text/javascript" src="./static/js/script.js"></script>
+</body>
+</html>
