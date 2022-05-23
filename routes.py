@@ -5,7 +5,6 @@ from flask import render_template, redirect, url_for, request
 from flask_login import current_user, login_user, logout_user, login_required
 from models import Users, News, Timetable, Dates
 from flask_mail import Message
-import js2py
 
 @app.route('/')
 @app.route('/login', methods=['GET', 'POST'])
@@ -101,6 +100,6 @@ def add():
 @login_required
 @app.route('/main')
 def main():
-    posts = db.session.query(Dates, News).join(Dates).order_by(Dates.date.desc()).all()
+    posts = db.session.query(Dates, News).join(Dates).order_by(Dates.date.desc()).limit(2).all()
     timetable = db.session.query(Dates, Timetable).join(Dates).all()
     return render_template("main_page.html", posts=posts, timetable=timetable)

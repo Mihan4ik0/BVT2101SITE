@@ -42,13 +42,12 @@
 	<div class="container">
 		<h1 class="page-title">News</h1>
 		<div id="news-list">
-			<!-- @addNews.js -->
-			<template id = "temp">
-				<div class="news-box" id="1">
-					<p class="news-box-date">Тест (22.04.2022)</p>
-					<p class="news-box-text"> (Тест). 18.05 будут проставляться зачеты! </p>
+			{% for post in posts %}
+				<div class="news-box">
+					<p class="news-box-date">{{ post.Dates.date }}</p>
+					<p class="news-box-text">{{ post.News.info }}</p>
 				</div>
-			</template>
+			{% endfor %}
 		</div>
 	</div>
 
